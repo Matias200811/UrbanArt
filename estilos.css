@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #101012; color: #faf9fc; font-family: "DM Sans", Arial, sans-serif; }
+header, footer { display: flex; align-items: center; gap: 2rem; padding: .6rem 7%; }
+header { border-bottom: 1px solid #302b34; }
+.marca { width: clamp(65px, 8vw, 120px); }
+nav { margin-left: auto; display: flex; gap: clamp(12px, 2vw, 35px); font-size: .85rem; }
+.actual { color: #c183ff; border-bottom: 2px solid #ac48fc; }
+button { color: #100a18; background: #ac53ff; border: 0; padding: .7rem 1.4rem; border-radius: 2rem; font: inherit; font-size: .86rem; font-weight: bold; }
+.portada { display: grid; grid-template-columns: 1fr 1fr; background: #121214; overflow: hidden; }
+.presentacion { align-self: center; padding: 2% 0 4% 11%; }
+h1 { margin: 0; }
+h1 img { display: block; width: 100%; }
+.presentacion p, .presentacion button { margin-left: 10%; }
+.presentacion p { line-height: 1.4; margin-top: .3rem; }
+.estatua { width: 100%; height: 100%; object-fit: cover; }
+.ventajas { padding: .7rem 7%; display: grid; grid-template-columns: repeat(4, 1fr); background: #151416; }
+.ventajas p { display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: .87rem; border-right: 1px solid #38323b; }
+.ventajas p:last-child { border: 0; }
+.ventajas b { color: #b557ff; font: 2.5rem Georgia, serif; }
+.galeria { padding: 2rem 7%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2%; align-items: center; background: linear-gradient(125deg,#242226,#141416 60%,#242126); }
+.galeria img { width: 100%; aspect-ratio: 1.65; object-fit: cover; border-radius: 8px; }
+h2 { font-size: clamp(24px, 2.65vw, 44px); line-height: .95; margin: 0; }
+h2::before { content: ""; display: block; width: 3rem; height: 3px; background: #a24cff; margin-bottom: .7rem; }
+em { font-style: normal; color: #b362ff; }
+.galeria p { font-size: .85rem; max-width: 22ch; }
+.borde { background: transparent; color: white; border: 1px solid #ad65e8; padding: .4rem 1rem; }
+footer { border-top: 1px solid #302b34; }
+footer span { border-left: 1px solid #888; padding-left: 1rem; font-size: .8rem; }
+.redes { width: 110px; margin-left: auto; }
+@media (max-width: 700px) {
+  header { flex-wrap: wrap; justify-content: space-between; gap: .6rem; }
+  nav { order: 3; width: 100%; justify-content: space-between; gap: .3rem; font-size: .74rem; }
+  .portada { grid-template-columns: 1fr; }
+  .presentacion { padding: 1rem 8%; }
+  .estatua { max-height: 250px; object-position: center 32%; }
+  .ventajas, .galeria { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .ventajas p { margin: 0; justify-content: flex-start; border: 0; }
+  .galeria { padding: 1.5rem 6%; }
+  footer { gap: .6rem; }
+  .redes { width: 80px; }
+}
