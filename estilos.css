@@ -39,3 +39,9 @@ footer span { border-left: 1px solid #888; padding-left: 1rem; font-size: .8rem;
   footer { gap: .6rem; }
   .redes { width: 80px; }
 }
+nav a, .galeria a { color: inherit; }
+#disenadores { padding: 2rem 7% 3rem; }
+#disenadores h2 { margin: 0 0 1rem; }
+.perfil-artista { display: inline-grid; gap: .3rem; padding: 1rem 1.6rem; background: #503078; color: white; border-radius: .6rem; text-decoration: none; }
+.perfil-artista strong { font-size: 1.6rem; }
+.perfil-artista:hover, .perfil-artista:focus-visible { background: #392051; }
