@@ -45,3 +45,6 @@ nav a, .galeria a { color: inherit; }
 .perfil-artista { display: inline-grid; gap: .3rem; padding: 1rem 1.6rem; background: #503078; color: white; border-radius: .6rem; text-decoration: none; }
 .perfil-artista strong { font-size: 1.6rem; }
 .perfil-artista:hover, .perfil-artista:focus-visible { background: #392051; }
+#disenadores { background: linear-gradient(105deg, #16131b 25%, #24162eea 66%, #231331b8), url("mural.png") center / cover; }
+.perfil-artista { width: min(100%, 480px); padding: 1.25rem 1.5rem; border: 1px solid #785396; border-left: 4px solid #bd77ff; background: #211a29; }
+.perfil-artista strong { color: #d2a0ff; font-size: 2rem; }
