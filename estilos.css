@@ -44,3 +44,13 @@ nav a, .galeria a { color: inherit; }
 .galeria .muestra img { display:block; object-fit:contain; border-radius:0; background:#19171b; }
 .muestra strong { display:block; padding:.7rem; }
 .muestra:hover, .muestra:focus-visible { border-color:#c183ff; }
+footer.pie-contacto { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:start; gap:2rem; padding:2.2rem 7%; }
+.pie-contacto address { font-style:normal; line-height:1.7; margin:.8rem 0; }
+.pie-contacto a { color:#e0bdff; }
+.pie-contacto .redes { display:block; margin:1rem 0 0; }
+.pie-contacto label { display:block; margin-bottom:.5rem; font-size:1.15rem; font-weight:bold; }
+.pie-contacto textarea { box-sizing:border-box; display:block; width:100%; padding:.75rem; color:#faf9fc; background:#201c24; border:1px solid #796987; border-radius:.5rem; font:inherit; resize:vertical; }
+.pie-contacto textarea:focus-visible { outline:2px solid #c183ff; }
+.pie-contacto form p { font-size:.85rem; color:#d4cadb; }
+.pie-contacto button { cursor:pointer; }
+@media (max-width:700px) { footer.pie-contacto { grid-template-columns:1fr; gap:1.5rem; } }
