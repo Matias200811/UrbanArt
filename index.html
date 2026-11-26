@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UrbanArt · Diseño, arte y creatividad</title>
-  <link rel="stylesheet" href="estilos.css?v=cancha">
+  <link rel="stylesheet" href="estilos.css?v=contacto">
 </head>
 <body>
   <header>
     <img class="marca" src="marca.png" alt="UrbanArt">
     <nav aria-label="Menú de muestra">
-      <span class="actual">Inicio</span><a href="#disenadores">Diseñadores</a><span>Tienda</span><span>Sobre nosotros</span><span>Contacto</span>
+      <span class="actual">Inicio</span><a href="#disenadores">Diseñadores</a><span>Tienda</span><span>Sobre nosotros</span><a href="#contacto">Contacto</a>
     </nav>
     <button disabled>Explorar →</button>
   </header>
@@ -37,10 +37,36 @@
       </a>
     </section>
   </main>
-  <footer>
-    <img class="marca" src="marca.png" alt="UrbanArt">
-    <span>Diseño que inspira.</span>
-    <img class="redes" src="redes.png" alt="Instagram, TikTok, YouTube y X">
+  <footer class="pie-contacto" id="contacto">
+    <div>
+      <img class="marca" src="marca.png" alt="UrbanArt">
+      <span>Diseño que inspira.</span>
+      <address>Elia Eliut - Calle vieja, Cuenca<br>
+        Teléfono: <a href="tel:+593987654321">0987654321</a>
+      </address>
+      <img class="redes" src="redes.png" alt="Instagram, TikTok, YouTube y X">
+    </div>
+    <form action="mailto:illescasmatias2008@gmail.com" method="post" enctype="text/plain" id="quejas">
+      <label for="mensaje-queja">Buzón de quejas</label>
+      <textarea id="mensaje-queja" name="Mensaje" rows="4" maxlength="1500" required placeholder="Escribe tu queja aquí…" aria-describedby="ayuda-queja"></textarea>
+      <p id="ayuda-queja">Se abrirá tu correo para que revises y envíes el mensaje a <a href="mailto:illescasmatias2008@gmail.com">illescasmatias2008@gmail.com</a>.</p>
+      <button type="submit">Continuar en mi correo →</button>
+    </form>
   </footer>
+  <script>
+    const formulario = document.getElementById('quejas');
+    const mensaje = document.getElementById('mensaje-queja');
+    mensaje.addEventListener('input', () => mensaje.setCustomValidity(''));
+    formulario.addEventListener('submit', (evento) => {
+      evento.preventDefault();
+      const texto = mensaje.value.trim();
+      if (!texto) {
+        mensaje.setCustomValidity('Escribe tu queja antes de continuar.');
+        mensaje.reportValidity();
+        return;
+      }
+      window.location.href = formulario.action + '?subject=Queja%20sobre%20UrbanArt&body=' + encodeURIComponent(texto);
+    });
+  </script>
 </body>
 </html>
