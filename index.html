@@ -10,7 +10,7 @@
   <header>
     <img class="marca" src="marca.png" alt="UrbanArt">
     <nav aria-label="Menú de muestra">
-      <span class="actual">Inicio</span><a href="#disenadores">Galería</a><span>Tienda</span><span>Sobre nosotros</span><span>Contacto</span>
+      <span class="actual">Inicio</span><a href="#disenadores">Diseñadores</a><span>Tienda</span><span>Sobre nosotros</span><span>Contacto</span>
     </nav>
     <button disabled>Explorar →</button>
   </header>
@@ -29,10 +29,13 @@
       <p><b aria-hidden="true">♧</b>Compra fácil<br> y segura</p>
       <p><b aria-hidden="true">♡</b>Apoya el arte<br> local</p>
     </section>
-    <section class="galeria" id="disenadores">
-      <div><h2>Nuestra<br><em>Galería</em></h2><p>ñecas 11 · Matías Illescas</p><a href="necas-11/index.html?v=cancha">Ver galería →</a></div><a class="muestra" href="necas-11/index.html?v=cancha#proyecto-fundamentos"><img src="necas-11/portadas/fundamentos.jpg" alt=""><strong>Rockmaster Cuenca ↗</strong></a>
-<a class="muestra" href="necas-11/index.html?v=cancha#proyecto-ui-pack"><img src="necas-11/portadas/ui-pack.jpg" alt=""><strong>Comalli ↗</strong></a>
-<a class="muestra" href="necas-11/index.html?v=cancha#proyecto-interactivo"><img src="necas-11/portadas/interactivo.jpg" alt=""><strong>Miguel Ángel ↗</strong></a></section>
+    <section class="galeria" id="disenadores" aria-labelledby="titulo-disenadores">
+      <h2 id="titulo-disenadores">Nuestros<br><em>diseñadores</em> <span aria-hidden="true">→</span></h2>
+      <a class="muestra" href="necas-11/index.html" aria-label="Ver la galería de ñecas 11, Matías Illescas">
+        <img src="necas-11/portadas/portafolio.jpg" alt="">
+        <strong>ñecas 11 · Matías Illescas ↗</strong>
+      </a>
+    </section>
   </main>
   <footer>
     <img class="marca" src="marca.png" alt="UrbanArt">
