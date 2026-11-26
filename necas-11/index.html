@@ -1,7 +1,46 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ñecas 11 · urbanART</title><link rel="stylesheet" href="cancha.css"></head><body><header><a href="../index.html#disenadores">← UrbanArt</a><span>Matías Illescas · Cuenca</span></header>
-<main><div class="cabecera"><div class="cancha" aria-hidden="true"></div><h1>ñecas <span>11</span></h1><p class="bio">Matías Illescas <span>/</span> Diseño y Multimedia</p></div><div class="rejilla">
-<article id="proyecto-fundamentos"><a href="archivos/fundamentos.pdf" aria-label="Abrir Rockmaster Cuenca en PDF"><div class="obra fundamentos"><img src="portadas/fundamentos.jpg" alt="Portada de Rockmaster Cuenca"></div><div class="pie"><small>Afiche de festival · 1 página</small><h2>Rockmaster Cuenca</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
-<article id="proyecto-ui-pack"><a href="archivos/ui-pack.pdf" aria-label="Abrir Comalli en PDF"><div class="obra ui-pack"><img src="portadas/ui-pack.jpg" alt="Portada de Comalli"></div><div class="pie"><small>Diseño de interfaz · 3 páginas</small><h2>Comalli</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
-<article id="proyecto-interactivo"><a href="archivos/interactivo.pdf" aria-label="Abrir Miguel Ángel en PDF"><div class="obra interactivo"><img src="portadas/interactivo.jpg" alt="Portada de Miguel Ángel"></div><div class="pie"><small>PDF interactivo · 3 páginas</small><h2>Miguel Ángel</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
-<article><a href="archivos/portafolio.pdf" aria-label="Abrir Portafolio 2026 en PDF"><div class="obra portafolio"><img src="portadas/portafolio.jpg" alt="Portada de Portafolio 2026"></div><div class="pie"><small>Selección de trabajos · 16 páginas</small><h2>Portafolio 2026</h2><span class="abrir">Abrir PDF ↗</span></div></a></article></div></main></body></html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ñecas 11 · Matías Illescas</title>
+  <link rel="stylesheet" href="pizarra.css">
+  <script src="pizarra.js" defer></script>
+</head>
+<body>
+  <header><a href="../index.html#disenadores">← Volver a UrbanArt</a><span>Cuenca, Ecuador</span></header>
+  <main>
+    <section class="hero" aria-labelledby="firma">
+      <div class="intro"><p>Portafolio de Matías Illescas</p><h1 id="firma">ñecas <em>11</em></h1>
+      <p class="bio">Estudio Diseño y Multimedia en Cuenca. Juego básquet, y para esta galería cambié el cuaderno de bocetos por una pizarra de cancha.</p></div>
+      <canvas width="560" height="340" aria-label="Pizarra de básquet con una jugada dibujada y un balón naranja">Una jugada dibujada en una cancha de básquet.</canvas>
+    </section>
+    <section aria-labelledby="trabajos"><h2 id="trabajos">Mis proyectos</h2>
+    <div class="grid">
+      <details id="proyecto-fundamentos">
+        <summary><span class="preview fundamentos"><img src="portadas/fundamentos.jpg" alt=""></span>
+          <span class="label"><small>Afiche de festival · 1 página</small><strong>Rockmaster Cuenca</strong><span class="toggle"><span class="closed">Ver ficha</span><span class="open">Cerrar ficha</span></span></span>
+        </summary>
+        <div class="info"><p>Para este afiche reuní las bandas, la fecha y el precio del festival en una sola pieza. El negro y el dorado le dan el tono de un concierto de rock, y los distintos tamaños de letra ayudan a encontrar rápido la información.</p><a href="archivos/fundamentos.pdf">Abrir Rockmaster Cuenca en PDF ↗</a></div>
+      </details>
+      <details id="proyecto-ui-pack">
+        <summary><span class="preview ui-pack"><img src="portadas/ui-pack.jpg" alt=""></span>
+          <span class="label"><small>Diseño de interfaz · 3 páginas</small><strong>Comalli</strong><span class="toggle"><span class="closed">Ver ficha</span><span class="open">Cerrar ficha</span></span></span>
+        </summary>
+        <div class="info"><p>En Comalli trabajé la identidad visual de una interfaz de comida. Partí de los tonos de los ingredientes y los llevé a los botones, los íconos y las ilustraciones para que todo se sienta parte del mismo lugar.</p><a href="archivos/ui-pack.pdf">Abrir Comalli en PDF ↗</a></div>
+      </details>
+      <details id="proyecto-interactivo">
+        <summary><span class="preview interactivo"><img src="portadas/interactivo.jpg" alt=""></span>
+          <span class="label"><small>PDF interactivo · 3 páginas</small><strong>Miguel Ángel</strong><span class="toggle"><span class="closed">Ver ficha</span><span class="open">Cerrar ficha</span></span></span>
+        </summary>
+        <div class="info"><p>Diseñé una entrada al mundo de Miguel Ángel mezclando pintura, escultura y tipografía. El botón de inicio convierte la portada en el primer paso de un recorrido por el documento.</p><a href="archivos/interactivo.pdf">Abrir Miguel Ángel en PDF ↗</a></div>
+      </details>
+      <details id="proyecto-portafolio">
+        <summary><span class="preview portafolio"><img src="portadas/portafolio.jpg" alt=""></span>
+          <span class="label"><small>Portafolio personal · 16 páginas</small><strong>Portafolio 2026</strong><span class="toggle"><span class="closed">Ver ficha</span><span class="open">Cerrar ficha</span></span></span>
+        </summary>
+        <div class="info"><p>Aquí junté una selección de mis trabajos de Diseño y Multimedia. Elegí una portada en blanco y negro con mi firma Necas para presentar las piezas bajo una misma identidad.</p><a href="archivos/portafolio.pdf">Abrir Portafolio 2026 en PDF ↗</a></div>
+      </details>
+    </div></section>
+  </main>
+</body></html>
