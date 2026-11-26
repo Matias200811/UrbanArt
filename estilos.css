@@ -40,11 +40,7 @@ footer span { border-left: 1px solid #888; padding-left: 1rem; font-size: .8rem;
   .redes { width: 80px; }
 }
 nav a, .galeria a { color: inherit; }
-#disenadores { padding: 2rem 7% 3rem; }
-#disenadores h2 { margin: 0 0 1rem; }
-.perfil-artista { display: inline-grid; gap: .3rem; padding: 1rem 1.6rem; background: #503078; color: white; border-radius: .6rem; text-decoration: none; }
-.perfil-artista strong { font-size: 1.6rem; }
-.perfil-artista:hover, .perfil-artista:focus-visible { background: #392051; }
-#disenadores { background: linear-gradient(105deg, #16131b 25%, #24162eea 66%, #231331b8), url("mural.png") center / cover; }
-.perfil-artista { width: min(100%, 480px); padding: 1.25rem 1.5rem; border: 1px solid #785396; border-left: 4px solid #bd77ff; background: #211a29; }
-.perfil-artista strong { color: #d2a0ff; font-size: 2rem; }
+.muestra { display:block; min-width:0; overflow:hidden; text-decoration:none; border:1px solid #514259; border-radius:8px; background:#241e28; }
+.galeria .muestra img { display:block; object-fit:contain; border-radius:0; background:#19171b; }
+.muestra strong { display:block; padding:.7rem; }
+.muestra:hover, .muestra:focus-visible { border-color:#c183ff; }

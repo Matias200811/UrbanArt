@@ -1,0 +1,27 @@
+* { box-sizing:border-box; }
+:root { --verde:#152b24; --papel:#f4f0da; --naranja:#ff854a; }
+body { margin:0; background:var(--papel); color:var(--verde); font-family:"Archivo Narrow",Arial,sans-serif; }
+header, main { width:min(1140px,92%); margin:auto; }
+header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; border-bottom:2px solid; }
+a { color:inherit; }
+a:focus-visible { outline:3px solid #ad431b; outline-offset:3px; }
+.cabecera { position:relative; isolation:isolate; overflow:hidden; margin:16px 0 28px; padding:clamp(24px,5vw,64px); background:#174737; color:var(--papel); border-bottom:8px solid var(--naranja); }
+h1 { font:italic 900 clamp(4rem,11vw,9rem)/.95 "Archivo Black",Arial,sans-serif; letter-spacing:-.08em; margin:0; }
+h1 span { color:var(--naranja); }
+.bio { margin:14px 0 0; }
+.cancha { position:absolute; z-index:-1; inset:8% -8% 8% 63%; border:2px solid #83a58b; transform:rotate(-12deg); overflow:hidden; background:repeating-linear-gradient(90deg,transparent 0 30px,#ffffff08 30px 60px); }
+.cancha::before,.cancha::after { content:""; position:absolute; border:2px solid #83a58b; top:50%; transform:translateY(-50%); }
+.cancha::before { right:-18%; width:95%; height:140%; border-radius:50%; }
+.cancha::after { right:-2px; width:43%; height:43%; }
+.rejilla { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; padding-bottom:40px; }
+article { scroll-margin:18px; }
+article a { display:block; height:100%; border:2px solid; text-decoration:none; background:#fffcef; box-shadow:4px 4px var(--verde); }
+.obra { display:grid; place-items:center; padding:18px; height:clamp(225px,30vw,340px); background:#c3c8a6; border-bottom:2px solid; }
+.ui-pack,.interactivo { background:#e9b58c; }
+.obra img { max-width:100%; max-height:100%; min-height:0; object-fit:contain; }
+.pie { padding:16px 20px; }
+small { font:.85rem monospace; }
+h2 { font-size:clamp(1.5rem,3vw,2.5rem); letter-spacing:-.05em; margin:5px 0 12px; }
+.abrir { text-decoration:underline; text-underline-offset:3px; }
+article a:hover .pie { background:#ffe0bf; }
+@media(max-width:640px){ .rejilla { grid-template-columns:1fr; } .cancha { left:76%; } }

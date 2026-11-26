@@ -1,49 +1,7 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ñecas 11 · urbanART</title><style>
-* { box-sizing: border-box; }
-:root { --negro: #101012; --blanco: #faf9fc; --lila: #c183ff; }
-body {
-  margin: 0; color: var(--blanco); font-family: "DM Sans", Arial, sans-serif;
-  background: radial-gradient(ellipse at 2% 30%, #271d33 0, transparent 47%), var(--negro);
-}
-header, main { width: min(1100px, 90%); margin: auto; }
-header { min-height: 68px; display: flex; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 1px solid #46374c; }
-.marca { display: block; width: 86px; }
-a { color: inherit; }
-header a { font-size: .9rem; text-underline-offset: 4px; }
-a:focus-visible { outline: 3px solid var(--lila); outline-offset: 4px; }
-main { padding-bottom: 4rem; }
-.cabecera {
-  padding: clamp(36px, 6vw, 75px) 0;
-  background: linear-gradient(90deg, #151318 24%, #151318db 54%, #28143657), url("../mural.png") right center / cover;
-  padding-left: clamp(18px, 4vw, 50px);
-  border-bottom: 3px solid #ac53ff;
-}
-h1, h2, p { margin: 0; }
-h1 { font-size: clamp(3.4rem, 9vw, 7rem); letter-spacing: -.065em; line-height: 1; }
-h1 span { color: var(--lila); font-style: italic; }
-.bio { margin-top: 14px; line-height: 1.5; }
-.bio span { color: var(--lila); }
-.rejilla { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(16px, 3vw, 32px); margin-top: 32px; }
-article a { display: block; background: #1a171e; border: 1px solid #48394f; border-radius: 10px; overflow: hidden; text-decoration: none; }
-.obra { height: clamp(210px, 29vw, 325px); padding: 24px; display: grid; place-items: center; background-color: #372a43; background-image: radial-gradient(#ffffff19 1px, transparent 1px); background-size: 7px 7px; }
-.ui-pack, .interactivo { background-color: #302d34; }
-.obra img { max-width: 100%; max-height: 100%; min-height: 0; object-fit: contain; box-shadow: 0 5px 14px #0006; transform: rotate(-2deg); }
-.ui-pack img, .portafolio img { transform: rotate(2deg); }
-.pie { padding: 18px 20px; }
-small { color: #d5c8df; }
-h2 { margin: 6px 0 12px; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.04em; }
-.abrir { color: var(--lila); font-weight: bold; }
-article a:hover, article a:focus-visible { border-color: var(--lila); }
-article a:hover .abrir { text-decoration: underline; }
-@media (max-width: 620px) {
-  .rejilla { grid-template-columns: 1fr; }
-  .cabecera { background-position: 64% center; }
-}
-
-</style></head><body><header><a href="../index.html"><img class="marca" src="../marca.png" alt="UrbanArt · Inicio"></a><a href="../index.html#disenadores">← Nuestros diseñadores</a></header>
-<main><div class="cabecera"><h1>ñecas <span>11</span></h1><p class="bio">Matías Illescas <span>/</span> Diseño y Multimedia</p></div><div class="rejilla">
-<article><a href="archivos/fundamentos.pdf" aria-label="Abrir Rockmaster Cuenca en PDF"><div class="obra fundamentos"><img src="portadas/fundamentos.jpg" alt="Portada de Rockmaster Cuenca"></div><div class="pie"><small>Afiche de festival · 1 página</small><h2>Rockmaster Cuenca</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
-<article><a href="archivos/ui-pack.pdf" aria-label="Abrir Comalli en PDF"><div class="obra ui-pack"><img src="portadas/ui-pack.jpg" alt="Portada de Comalli"></div><div class="pie"><small>Diseño de interfaz · 3 páginas</small><h2>Comalli</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
-<article><a href="archivos/interactivo.pdf" aria-label="Abrir Miguel Ángel en PDF"><div class="obra interactivo"><img src="portadas/interactivo.jpg" alt="Portada de Miguel Ángel"></div><div class="pie"><small>PDF interactivo · 3 páginas</small><h2>Miguel Ángel</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ñecas 11 · urbanART</title><link rel="stylesheet" href="cancha.css"></head><body><header><a href="../index.html#disenadores">← UrbanArt</a><span>Matías Illescas · Cuenca</span></header>
+<main><div class="cabecera"><div class="cancha" aria-hidden="true"></div><h1>ñecas <span>11</span></h1><p class="bio">Matías Illescas <span>/</span> Diseño y Multimedia</p></div><div class="rejilla">
+<article id="proyecto-fundamentos"><a href="archivos/fundamentos.pdf" aria-label="Abrir Rockmaster Cuenca en PDF"><div class="obra fundamentos"><img src="portadas/fundamentos.jpg" alt="Portada de Rockmaster Cuenca"></div><div class="pie"><small>Afiche de festival · 1 página</small><h2>Rockmaster Cuenca</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
+<article id="proyecto-ui-pack"><a href="archivos/ui-pack.pdf" aria-label="Abrir Comalli en PDF"><div class="obra ui-pack"><img src="portadas/ui-pack.jpg" alt="Portada de Comalli"></div><div class="pie"><small>Diseño de interfaz · 3 páginas</small><h2>Comalli</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
+<article id="proyecto-interactivo"><a href="archivos/interactivo.pdf" aria-label="Abrir Miguel Ángel en PDF"><div class="obra interactivo"><img src="portadas/interactivo.jpg" alt="Portada de Miguel Ángel"></div><div class="pie"><small>PDF interactivo · 3 páginas</small><h2>Miguel Ángel</h2><span class="abrir">Abrir PDF ↗</span></div></a></article>
 <article><a href="archivos/portafolio.pdf" aria-label="Abrir Portafolio 2026 en PDF"><div class="obra portafolio"><img src="portadas/portafolio.jpg" alt="Portada de Portafolio 2026"></div><div class="pie"><small>Selección de trabajos · 16 páginas</small><h2>Portafolio 2026</h2><span class="abrir">Abrir PDF ↗</span></div></a></article></div></main></body></html>
